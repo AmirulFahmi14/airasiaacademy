@@ -18,12 +18,12 @@ if option=='line chart':
 
 elif option=='map':
     map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [3.1242, 101.6861],
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 
     st.map(map_data)
 
-elif:
+elif option=='T n C':
     st.write('Before you continue, please read the [terms and conditions](https://www.gnu.org/licenses/gpl-3.0.en.html)')
     show = st.checkbox('I agree the terms and conditions')
     if show:
@@ -31,6 +31,7 @@ elif:
         'Intplan': ['yes', 'yes', 'yes', 'no'],
         'Churn Status': [0, 0, 0, 1]
         }))
+
 else:
     'Starting a long computation...'
 
